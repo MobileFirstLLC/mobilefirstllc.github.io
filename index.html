@@ -10,11 +10,74 @@
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
     <link rel="shortcut icon" href="/favicon.ico">
-  <title>Mobile First OSS</title>
+    <link href="https://fonts.googleapis.com/css?family=Carrois+Gothic&display=swap" rel="stylesheet">
+
+    <title>Mobile First OSS</title>
+    <meta property="og:title" content="Mobile First OSS"/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:description" content="Open Source Software Projects by Mobile First"/>
+    <meta property="og:image:width" content="1200"/>
+    <meta property="og:image:height" content="630"/>
+    <meta itemprop="image" content="https://mobilefirstllc.github.io/images/og_image.png">
+    <meta property="og:image" content="https://mobilefirstllc.github.io/images/og_image.png"/>
+    <meta name="twitter:card" content="summary_large_image">
+
+    <meta name="theme-color" content="#222136">
+    <meta name="msapplication-TileColor" content="#222136">
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-129118591-4"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+
+        gtag('js', new Date());
+        gtag('config', 'UA-129118591-4');
+    </script>
+
+    <style>
+        body {
+            font-family: 'Carrois Gothic', sans-serif;
+            display: flex;
+            flex-direction: column;
+            font-size: 1.5em;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            background: #222136;
+            min-height: 80vh;
+            padding: 20px;
+            box-sizing: border-box;
+            cursor: default;
+        }
+
+        a {
+            cursor: pointer;
+            color: #fff;
+        }
+        ul a{
+            font-size: 1.5em;
+            text-decoration: none;
+            display: inline-block;
+            padding: 5px 15px;
+            border-radius: 4px;
+            transition: all 0.2s;
+        }
+
+        ul a:hover{
+            background: rgba(255,255,255,0.05);
+        }
+        ul{list-style: none}
+    </style>
 </head>
-  <body style='display:flex;flex-direction:column;font-size:2em;align-items:center;justify-content:center;color:#fff;background:#222136;min-height:80vh;'>
-    <span aria-label='hey'>👋</span>
-    <br/><br/>
-    <a style="color:#fff;text-decoration:none;" href='/extension-cli'>Extension CLI</a>
-  </body>
+<body>
+<span aria-label='hey'>👋</span>
+<p>Open Source Software Projects by <a href="https://mobilefirst.me">Mobile First</a></p>
+<ul>
+    <li><a href='/extension-cli'>Extension CLI</a></li>
+</ul>
+</body>
 </html>
