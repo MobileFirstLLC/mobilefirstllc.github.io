@@ -56,28 +56,149 @@
 
         a {
             cursor: pointer;
+            text-decoration: none;
             color: #fff;
         }
-        ul a{
+
+        ul {
+            margin: 1em auto;
+            padding: 0;
+            max-width: 600px;
+            list-style: none
+        }
+
+        ul a {
             font-size: 1.5em;
-            text-decoration: none;
             display: inline-block;
             padding: 5px 15px;
             border-radius: 4px;
             transition: all 0.2s;
         }
 
-        ul a:hover{
-            background: rgba(255,255,255,0.05);
+        ul a:hover {
+            background: rgba(255, 255, 255, 0.05);
         }
-        ul{list-style: none}
+        ul p{
+            font-size: 0.7em;
+            padding: 0 15px;
+        }
+
+        #pixel-logo {
+            display: grid;
+            grid-template-columns: repeat(5, 12px);
+            grid-template-rows: repeat(6, 12px);
+            margin: 30px auto;
+            align-items: center;
+            justify-content: center;
+            animation: pulse 2s infinite;
+        }
+
+        #pixel-logo span {
+            display: inline-block;
+            width: calc(100% - 2px);
+            height: calc(100% - 2px);
+            background: transparent;
+        }
+
+        #pixel-logo span:nth-child(2),
+        #pixel-logo span:nth-child(3),
+        #pixel-logo span:nth-child(6),
+        #pixel-logo span:nth-child(8),
+        #pixel-logo span:nth-child(11),
+        #pixel-logo span:nth-child(13),
+        #pixel-logo span:nth-child(16),
+        #pixel-logo span:nth-child(18),
+        #pixel-logo span:nth-child(21),
+        #pixel-logo span:nth-child(23),
+        #pixel-logo span:nth-child(26) {
+            background: #009DDC;
+        }
+
+        #pixel-logo span:nth-child(9),
+        #pixel-logo span:nth-child(10),
+        #pixel-logo span:nth-child(15),
+        #pixel-logo span:nth-child(20) {
+            background: #A4C639;
+        }
+
+        .small {
+            font-size: 0.8em;
+            opacity: 0.5;
+            margin-top: 2em;
+        }
+        .small img{
+            display:table;
+            margin: 10px auto;
+        }
+
+        @media (max-width: 678px) {
+            ul a {
+                font-size: 1em;
+            }
+        }
+
+        @keyframes pulse {
+            from {
+                transform: scale3d(1, 1, 1);
+            }
+
+            50% {
+                transform: scale3d(1.05, 1.05, 1.05);
+            }
+
+            to {
+                transform: scale3d(1, 1, 1);
+            }
+        }
+
     </style>
 </head>
 <body>
-<span aria-label='hey'>👋</span>
-<p>Open Source Software Projects by <a href="https://mobilefirst.me">Mobile First</a></p>
+<a href="https://mobilefirst.me">
+    <div id="pixel-logo">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+</a>
+
+<p>These are open source software projects by <a href="https://mobilefirst.me">Mobile First</a>:</p>
 <ul>
-    <li><a href='/extension-cli'>Extension CLI</a></li>
+    <li><a href='/extension-cli'>Extension CLI</a>
+    <p>> Command-line utility tool that speeds up chrome extension development by providing a systematic way to build, test and document extension projects.</p>
+    </li>
 </ul>
+
+<div class="small">
+    <a href="https://github.com/MobileFirstLLC" rel="nofollow"><img src="./github-circle.svg" alt=""/></a>
+    <a href="https://github.com/MobileFirstLLC" rel="nofollow">View on Github</a>
+</div>
 </body>
 </html>
