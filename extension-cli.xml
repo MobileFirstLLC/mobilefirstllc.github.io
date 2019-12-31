@@ -7,28 +7,79 @@
         <loc>https://mobilefirstllc.github.io/extension-cli/index.html</loc>
     </url>
     <url>
-        <loc>https://mobilefirstllc.github.io/extension-cli/list_tutorial.html</loc>
+        <loc>
+            https://mobilefirstllc.github.io/extension-cli/list_tutorial.html
+        </loc>
     </url>
     <url>
-        <loc>https://mobilefirstllc.github.io/extension-cli/tutorial-getting-started.html</loc>
+        <loc>
+            https://mobilefirstllc.github.io/extension-cli/tutorial--_getting-started.html
+        </loc>
     </url>
     <url>
-        <loc>https://mobilefirstllc.github.io/extension-cli/tutorial-xt-build.html</loc>
+        <loc>
+            https://mobilefirstllc.github.io/extension-cli/tutorial-changelog.html
+        </loc>
     </url>
     <url>
-        <loc>https://mobilefirstllc.github.io/extension-cli/tutorial-xt-clean.html</loc>
+        <loc>
+            https://mobilefirstllc.github.io/extension-cli/tutorial-commands.html
+        </loc>
     </url>
     <url>
-        <loc>https://mobilefirstllc.github.io/extension-cli/tutorial-xt-create.html</loc>
+        <loc>
+            https://mobilefirstllc.github.io/extension-cli/tutorial-getting-started.html
+        </loc>
     </url>
     <url>
-        <loc>https://mobilefirstllc.github.io/extension-cli/tutorial-xt-docs.html</loc>
+        <loc>
+            https://mobilefirstllc.github.io/extension-cli/tutorial-helpful-links.html
+        </loc>
     </url>
     <url>
-        <loc>https://mobilefirstllc.github.io/extension-cli/tutorial-xt-sync.html</loc>
+        <loc>
+            https://mobilefirstllc.github.io/extension-cli/tutorial-other.html
+        </loc>
     </url>
     <url>
-        <loc>https://mobilefirstllc.github.io/extension-cli/tutorial-xt-test.html</loc>
+        <loc>
+            https://mobilefirstllc.github.io/extension-cli/tutorial-project-showcase.html
+        </loc>
+    </url>
+    <url>
+        <loc>
+            https://mobilefirstllc.github.io/extension-cli/tutorial-xt-build.html
+        </loc>
+    </url>
+    <url>
+        <loc>
+            https://mobilefirstllc.github.io/extension-cli/tutorial-xt-clean.html
+        </loc>
+    </url>
+    <url>
+        <loc>
+            https://mobilefirstllc.github.io/extension-cli/tutorial-xt-create
+        </loc>
+    </url>
+    <url>
+        <loc>
+            https://mobilefirstllc.github.io/extension-cli/tutorial-xt-create.html
+        </loc>
+    </url>
+    <url>
+        <loc>
+            https://mobilefirstllc.github.io/extension-cli/tutorial-xt-docs.html
+        </loc>
+    </url>
+    <url>
+        <loc>
+            https://mobilefirstllc.github.io/extension-cli/tutorial-xt-sync.html
+        </loc>
+    </url>
+    <url>
+        <loc>
+            https://mobilefirstllc.github.io/extension-cli/tutorial-xt-test.html
+        </loc>
     </url>
     <url>
         <loc>https://mobilefirstllc.github.io/extension-cli/tutorial-xt-build.js.html</loc>
