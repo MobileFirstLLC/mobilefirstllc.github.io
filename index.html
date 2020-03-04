@@ -76,18 +76,21 @@
         margin: 10px 10px 3em 10px;
         padding: 10px;
         transition: all 0.2s;
+        cursor: pointer;
     }
-    ul li:hover{
+
+    ul li:hover {
         background: rgba(255, 255, 255, 0.05);
     }
 
-    ul a {
+    ul h2 {
         font-weight: 700;
         font-size: 1.1em;
-        display: inline-block;
+        display: block;
         padding: 5px 15px;
         border-radius: 4px;
         letter-spacing: 0.05em;
+        text-align: center;
     }
 
     ul p {
@@ -150,10 +153,12 @@
         ul a {
             font-size: 1em;
         }
-        ul{
+
+        ul {
             grid-template-columns: 100%;
         }
-        ul li{
+
+        ul li {
             margin-bottom: 20px;
         }
     }
@@ -211,11 +216,17 @@
 
 <p>These are open source software projects by <a href="https://mobilefirst.me">Mobile First</a></p>
 <ul>
-    <li><a href='/extension-cli'>Extension CLI</a>
+    <li onclick="window.location.href = '/extension-cli'"
+        onkeypress="window.location.href = '/extension-cli'"
+        role="button" tabindex="0">
+        <h2>Extension CLI</h2>
         <p>Command-line utility tool that speeds up chrome extension development by providing a systematic way to build,
             test and document extension projects.</p>
     </li>
-    <li><a href='/image-zoom-for-ig/'>Image Zoom for IG</a>
+    <li onclick="window.location.href = '/image-zoom-for-ig'"
+        onkeypress="window.location.href = '/image-zoom-for-ig'"
+        role="button" tabindex="0">
+        <h2>Image Zoom for IG</h2>
         <p>Resize Instagram&trade; images to fit large screens with easy on/off toggle.</p>
     </li>
 </ul>
