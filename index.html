@@ -64,11 +64,11 @@
     ul {
         margin: 1em auto;
         padding: 0;
-        max-width: 700px;
+        max-width: 900px;
         list-style: none;
         display: grid;
         min-height: 0;
-        grid-template-columns: repeat(auto-fill, minmax(calc(100% / 2), 1fr));
+        grid-template-columns: repeat(auto-fill, minmax(calc(100% / 3), 1fr));
         grid-auto-rows: 1fr;
     }
 
@@ -177,17 +177,25 @@
         margin: 10px auto;
     }
 
+    @media (max-width: 1024px) {
+        ul {
+            grid-template-columns: repeat(auto-fill, minmax(calc(100% / 2), 1fr));
+        }
+    }
+
+
     @media (max-width: 678px) {
         ul a {
             font-size: 1em;
         }
 
         ul {
-            grid-template-columns: 100%;
+           display: block;
         }
 
         ul li {
             margin-bottom: 20px;
+            min-height: 200px;
         }
     }
 
