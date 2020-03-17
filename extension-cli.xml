@@ -1,99 +1,99 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <urlset xmlns='http://www.sitemaps.org/schemas/sitemap/0.9'>
     <url>
-        <loc>https://mobilefirstllc.github.io/extension-cli/</loc>
+        <loc>https://oss.mobilefirst.me/extension-cli/</loc>
     </url>
     <url>
         <loc>
-            https://mobilefirstllc.github.io/extension-cli/list_tutorial.html
+            https://oss.mobilefirst.me/extension-cli/list_tutorial.html
         </loc>
     </url>
     <url>
         <loc>
-            https://mobilefirstllc.github.io/extension-cli/tutorial--_getting-started.html
+            https://oss.mobilefirst.me/extension-cli/tutorial--_getting-started.html
         </loc>
     </url>
     <url>
         <loc>
-            https://mobilefirstllc.github.io/extension-cli/tutorial-changelog.html
+            https://oss.mobilefirst.me/extension-cli/tutorial-changelog.html
         </loc>
     </url>
     <url>
         <loc>
-            https://mobilefirstllc.github.io/extension-cli/tutorial-commands.html
+            https://oss.mobilefirst.me/extension-cli/tutorial-commands.html
         </loc>
     </url>
     <url>
         <loc>
-            https://mobilefirstllc.github.io/extension-cli/tutorial-getting-started.html
+            https://oss.mobilefirst.me/extension-cli/tutorial-getting-started.html
         </loc>
     </url>
     <url>
         <loc>
-            https://mobilefirstllc.github.io/extension-cli/tutorial-helpful-links.html
+            https://oss.mobilefirst.me/extension-cli/tutorial-helpful-links.html
         </loc>
     </url>
     <url>
         <loc>
-            https://mobilefirstllc.github.io/extension-cli/tutorial-other.html
+            https://oss.mobilefirst.me/extension-cli/tutorial-other.html
         </loc>
     </url>
     <url>
         <loc>
-            https://mobilefirstllc.github.io/extension-cli/tutorial-project-showcase.html
+            https://oss.mobilefirst.me/extension-cli/tutorial-project-showcase.html
         </loc>
     </url>
     <url>
         <loc>
-            https://mobilefirstllc.github.io/extension-cli/tutorial-xt-build.html
+            https://oss.mobilefirst.me/extension-cli/tutorial-xt-build.html
         </loc>
     </url>
     <url>
         <loc>
-            https://mobilefirstllc.github.io/extension-cli/tutorial-xt-clean.html
+            https://oss.mobilefirst.me/extension-cli/tutorial-xt-clean.html
         </loc>
     </url>
     <url>
         <loc>
-            https://mobilefirstllc.github.io/extension-cli/tutorial-xt-create
+            https://oss.mobilefirst.me/extension-cli/tutorial-xt-create
         </loc>
     </url>
     <url>
         <loc>
-            https://mobilefirstllc.github.io/extension-cli/tutorial-xt-create.html
+            https://oss.mobilefirst.me/extension-cli/tutorial-xt-create.html
         </loc>
     </url>
     <url>
         <loc>
-            https://mobilefirstllc.github.io/extension-cli/tutorial-xt-docs.html
+            https://oss.mobilefirst.me/extension-cli/tutorial-xt-docs.html
         </loc>
     </url>
     <url>
         <loc>
-            https://mobilefirstllc.github.io/extension-cli/tutorial-xt-sync.html
+            https://oss.mobilefirst.me/extension-cli/tutorial-xt-sync.html
         </loc>
     </url>
     <url>
         <loc>
-            https://mobilefirstllc.github.io/extension-cli/tutorial-xt-test.html
+            https://oss.mobilefirst.me/extension-cli/tutorial-xt-test.html
         </loc>
     </url>
     <url>
-        <loc>https://mobilefirstllc.github.io/extension-cli/xt-build.js.html</loc>
+        <loc>https://oss.mobilefirst.me/extension-cli/xt-build.js.html</loc>
     </url>
     <url>
-        <loc>https://mobilefirstllc.github.io/extension-cli/xt-clean.js.html</loc>
+        <loc>https://oss.mobilefirst.me/extension-cli/xt-clean.js.html</loc>
     </url>
     <url>
-        <loc>https://mobilefirstllc.github.io/extension-cli/xt-create.js.html</loc>
+        <loc>https://oss.mobilefirst.me/extension-cli/xt-create.js.html</loc>
     </url>
     <url>
-        <loc>https://mobilefirstllc.github.io/extension-cli/xt-docs.js.html</loc>
+        <loc>https://oss.mobilefirst.me/extension-cli/xt-docs.js.html</loc>
     </url>
     <url>
-        <loc>https://mobilefirstllc.github.io/extension-cli/xt-sync.js.html</loc>
+        <loc>https://oss.mobilefirst.me/extension-cli/xt-sync.js.html</loc>
     </url>
     <url>
-        <loc>https://mobilefirstllc.github.io/extension-cli/xt-test.js.html</loc>
+        <loc>https://oss.mobilefirst.me/extension-cli/xt-test.js.html</loc>
     </url>
 </urlset>
