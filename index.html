@@ -9,7 +9,7 @@
     <meta name="mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
-    <link rel="shortcut icon" href="/favicon.ico">
+    <link rel="shortcut icon" href="/images/favicon.ico">
     <link href="https://fonts.googleapis.com/css?family=Carrois+Gothic&display=swap" rel="stylesheet">
 
     <meta property="og:type" content="website"/>
@@ -21,9 +21,9 @@
     <meta name="twitter:title" content="Mobile First OSS">
 
     <!-- images -->
-    <meta itemprop="image" content="https://oss.mobilefirst.me/og_image.png">
-    <meta property="og:image" content="https://oss.mobilefirst.me/og_image.png"/>
-    <meta name="twitter:image" content="https://oss.mobilefirst.me/og_image.png">
+    <meta itemprop="image" content="https://oss.mobilefirst.me/images/og_image.png">
+    <meta property="og:image" content="https://oss.mobilefirst.me/images/og_image.png"/>
+    <meta name="twitter:image" content="https://oss.mobilefirst.me/images/og_image.png">
     <meta name="twitter:card" content="summary_large_image">
     <meta property="og:image:width" content="1200"/>
     <meta property="og:image:height" content="630"/>
@@ -76,7 +76,7 @@
     ul {
         margin: 1em auto;
         padding: 0;
-        max-width: 900px;
+        max-width: 1000px;
         list-style: none;
         display: grid;
         min-height: 0;
@@ -98,10 +98,11 @@
     }
 
     ul li {
+        max-width: 320px;
         border-radius: 2px;
         border-top: 10px solid #333;
         background: rgba(0, 0, 0, 0.1);
-        margin: 10px 10px 20px 10px;
+        margin: 10px 15px 20px 15px;
         transition: all 0.2s;
         cursor: pointer;
     }
@@ -120,16 +121,18 @@
     }
 
     ul li:hover {
-        background: rgba(255, 255, 255, 0.05);
+        filter: brightness(120%);
+        background: rgba(255,255,255, 0.01);
     }
 
     ul li picture, ul li iframe {
-        background:#333;
+        background: #333;
         height: 200px;
         width: 100%;
         position: relative;
         display: block;
     }
+
 
     ul li picture img {
         position: absolute;
@@ -195,10 +198,18 @@
         background: #A4C639;
     }
 
+    .links {
+        margin-top: 2em;
+        margin-bottom: 2em;
+        display: flex;
+        flex-direction: row;
+        place-items: center;
+    }
+
     .small {
         font-size: 0.8em;
         opacity: 0.5;
-        margin-top: 2em;
+        margin: 0 1em;
     }
 
     .small img {
@@ -227,6 +238,7 @@
             min-height: 200px;
             padding-bottom: 10px;
         }
+
         ul li picture, ul li iframe {
             height: 180px;
         }
@@ -319,9 +331,15 @@
     </li>
 </ul>
 
-<div class="small">
-    <a href="https://github.com/MobileFirstLLC" rel="nofollow"><img src="./github-circle.svg" alt=""/></a>
-    <a href="https://github.com/MobileFirstLLC" rel="nofollow">View on Github</a>
+<div class="links">
+    <div class="small">
+        <a href="https://github.com/MobileFirstLLC" rel="nofollow"><img src="./images/github-circle.svg" alt=""/></a>
+        <a href="https://github.com/MobileFirstLLC" rel="nofollow">View on Github</a>
+    </div>
+    <div class="small">
+        <a href="https://www.npmjs.com/~mobilefirstllc" rel="nofollow"><img src="./images/npm.svg" alt=""/></a>
+        <a href="https://www.npmjs.com/~mobilefirstllc" rel="nofollow">NPM Profile</a>
+    </div>
 </div>
 </body>
 </html>
