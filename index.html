@@ -102,7 +102,6 @@
         border-top: 10px solid #333;
         background: rgba(0, 0, 0, 0.1);
         margin: 10px 10px 20px 10px;
-        padding: 10px;
         transition: all 0.2s;
         cursor: pointer;
     }
@@ -111,23 +110,41 @@
         border-top-color: #E91E63;
     }
 
+
     ul li:nth-child(3n + 2) {
-        border-top-color: #9C27B0;
+        border-top-color: #3F51B5;
     }
 
     ul li:nth-child(3n + 0) {
-        border-top-color: #3F51B5;
+        border-top-color: #9C27B0;
     }
 
     ul li:hover {
         background: rgba(255, 255, 255, 0.05);
     }
 
+    ul li picture, ul li iframe {
+        background:#333;
+        height: 200px;
+        width: 100%;
+        position: relative;
+        display: block;
+    }
+
+    ul li picture img {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        object-fit: cover;
+    }
+
     ul h2 {
         font-weight: 700;
         font-size: 1.1em;
         display: block;
-        padding: 5px 15px;
+        padding: 15px 20px 10px 20px;
         border-radius: 4px;
         letter-spacing: 0.05em;
         text-align: center;
@@ -136,7 +153,7 @@
     ul p {
         opacity: 0.75;
         font-size: 0.7em;
-        padding: 0 15px;
+        padding: 0 25px 15px 25px;
         line-height: 1.5;
     }
 
@@ -202,12 +219,16 @@
         }
 
         ul {
-           display: block;
+            display: block;
         }
 
         ul li {
             margin-bottom: 20px;
             min-height: 200px;
+            padding-bottom: 10px;
+        }
+        ul li picture, ul li iframe {
+            height: 180px;
         }
     }
 
@@ -268,6 +289,10 @@
     <li onclick="window.location.href = '/extension-cli'"
         onkeypress="window.location.href = '/extension-cli'"
         role="button" tabindex="0">
+        <picture>
+            <img src="https://pbs.twimg.com/card_img/1245484938054569988/MzApkYb_?format=jpg&name=600x314"
+                 alt="extension-cli"/>
+        </picture>
         <h2>Extension CLI</h2>
         <p>Command-line utility tool that speeds up chrome extension development by providing a systematic way to build,
             test and document extension projects.</p>
@@ -275,6 +300,9 @@
     <li onclick="window.location.href = '/image-zoom-for-ig'"
         onkeypress="window.location.href = '/image-zoom-for-ig'"
         role="button" tabindex="0">
+        <picture>
+            <img src="./images/ig_zoomsm.gif" alt="image_zoom"/>
+        </picture>
         <h2>Image Zoom for Instagram</h2>
         <p>Resize Instagram&trade; images to fit large screens with easy on/off toggle.</p>
     </li>
@@ -282,6 +310,10 @@
     <li onclick="window.location.href = '/chrome-themes'"
         onkeypress="window.location.href = '/chrome-themes'"
         role="button" tabindex="0">
+        <picture>
+            <img src="https://lh3.googleusercontent.com/LRn1ParyTrbSrkEVtjeCdU_myk020nsox0L6nulUIB1owQslBOxqPVORQiR0XtQ4RXX8Ji67Bw=w640-h400-e365"
+                 alt="chrome themes"/>
+        </picture>
         <h2>Chrome Themes</h2>
         <p>Collection of free browser themes. Add some style & flair to your browser!</p>
     </li>
