@@ -71,6 +71,7 @@
         cursor: pointer;
         text-decoration: none;
         color: #fff;
+        white-space: nowrap;
     }
 
     ul {
@@ -98,31 +99,44 @@
     }
 
     ul li {
+        border: 2px solid #1115;
         max-width: 320px;
-        border-radius: 2px;
-        border-top: 10px solid #333;
+        border-radius: 9px;
         background: rgba(0, 0, 0, 0.1);
         margin: 10px 15px 20px 15px;
         transition: all 0.2s;
         cursor: pointer;
+        overflow: hidden;
+        position: relative;
+        padding-top: 10px;
     }
 
-    ul li:nth-child(3n + 1) {
-        border-top-color: #E91E63;
+    ul li:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 10px;
+        width: 100%;
+        z-index: 1;
     }
 
-
-    ul li:nth-child(3n + 2) {
-        border-top-color: #3F51B5;
+    ul li:nth-child(3n + 1):before {
+        background: #E91E63;
     }
 
-    ul li:nth-child(3n + 0) {
-        border-top-color: #9C27B0;
+    ul li:nth-child(3n + 2):before {
+        background: #3F51B5;
+    }
+
+    ul li:nth-child(3n + 0):before {
+        background: #9C27B0;
     }
 
     ul li:hover {
         filter: brightness(120%);
-        background: rgba(255,255,255, 0.01);
+        background: rgba(255, 255, 255, 0.01);
         transform: scale(1.02, 1.02);
     }
 
@@ -199,22 +213,29 @@
     }
 
     .links {
-        margin-top: 2em;
-        margin-bottom: 2em;
+        width: 700px;
+        max-width: 90%;
+        margin: 2em auto;
         display: flex;
         flex-direction: row;
-        place-items: center;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
     }
 
     .small {
+        text-align: center;
+        min-width: 80px;
         font-size: 0.8em;
         opacity: 0.5;
-        margin: 0 1em;
+        margin: 0.5em;
     }
 
     .small img {
         display: table;
         margin: 10px auto;
+        width: 48px;
+        height: 48px;
     }
 
     @media (max-width: 1024px) {
@@ -224,22 +245,30 @@
     }
 
     @media (max-width: 678px) {
+        .intro {
+            text-align: center;
+            line-height: 1.5;
+        }
+
         ul a {
             font-size: 1em;
         }
 
         ul {
             display: block;
+            margin-bottom: 0;
         }
 
         ul li {
-            margin-bottom: 20px;
-            min-height: 200px;
-            padding-bottom: 10px;
+            margin-bottom: 2em;
+            padding-bottom: 0;
         }
 
         ul li picture, ul li iframe {
-            height: 180px;
+            height: 220px;
+        }
+        .links{
+            margin-top: 0;
         }
     }
 
@@ -294,14 +323,14 @@
     </div>
 </a>
 
-<p>These are open source software projects by <a
+<p class="intro">These are open source software projects by <a
         href="https://mobilefirst.me" style="border-bottom:1px solid #fff;">Mobile First</a></p>
 <ul>
     <li onclick="window.location.href = '/extension-cli'"
         onkeypress="window.location.href = '/extension-cli'"
         role="button" tabindex="0">
         <picture>
-            <img src="https://repository-images.githubusercontent.com/228303750/377f2000-228e-11ea-9d8a-a77af7765cd5"
+            <img src="/images/extension-cli.jpg"
                  alt="extension-cli"/>
         </picture>
         <h2>Extension CLI</h2>
@@ -312,11 +341,12 @@
         onkeypress="window.location.href = 'https://github.com/MobileFirstLLC/irregular-expressions'"
         role="button" tabindex="0">
         <picture>
-            <img src="https://repository-images.githubusercontent.com/257455474/e24d3b00-8361-11ea-8bb5-a61fa4a9ca56"
+            <img src="/images/irregex.jpg"
                  alt="irregular expressions"/>
         </picture>
         <h2>Irregular Expressions</h2>
-        <p>Virtual keyboard for android devices that enables you to write expressive text 🅻𝚒𝕜ᴇ 𝔱𝒽ⓘ𝒔 everywhere &mdash; even in apps where text styling is not supported.</p>
+        <p>Virtual keyboard for android devices that enables you to write expressive text 🅻𝚒𝕜ᴇ 𝔱𝒽ⓘ𝒔 everywhere
+            &mdash; even in apps where text styling is not supported.</p>
     </li>
 </ul>
 
