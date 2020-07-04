@@ -109,6 +109,7 @@
         overflow: hidden;
         position: relative;
         padding-top: 10px;
+        outline:none;
     }
 
     ul li:before {
@@ -134,7 +135,7 @@
         background: #9C27B0;
     }
 
-    ul li:hover {
+    ul li:hover, ul li:focus {
         filter: brightness(120%);
         background: rgba(255, 255, 255, 0.01);
         transform: scale(1.02, 1.02);
@@ -291,7 +292,7 @@
 
 </style>
 <body>
-<a href="https://mobilefirst.me">
+<a href="https://mobilefirst.me" style="outline:none" tabindex="-1">
     <div id="pixel-logo">
         <span></span>
         <span></span>
@@ -381,6 +382,10 @@
         <a href="https://mobilefirst.me" rel="nofollow"><img src="./images/home.svg" alt=""/></a>
         <a href="https://mobilefirst.me" rel="nofollow">Web</a>
     </div>
+</div>
+<div style="text-align: center;font-size:0.6em;">
+    <span role="img" aria-label="pin">📍</span>
+    <span style=" opacity:0.6;">Augusta, Georgia since 2018</span>
 </div>
 </body>
 </html>
