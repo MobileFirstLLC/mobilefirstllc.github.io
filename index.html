@@ -81,7 +81,7 @@
         list-style: none;
         display: grid;
         min-height: 0;
-        grid-template-columns: repeat(auto-fill, minmax(calc(100% / 2), 1fr));
+        grid-template-columns: repeat(auto-fill, minmax(calc(100% / 3), 1fr));
         grid-auto-rows: 1fr;
     }
 
@@ -240,7 +240,7 @@
 
     @media (max-width: 1024px) {
         ul {
-            grid-template-columns: repeat(auto-fill, minmax(calc(100% / 1), 1fr));
+            grid-template-columns: repeat(auto-fill, minmax(calc(100% / 2), 1fr));
         }
     }
 
@@ -248,6 +248,9 @@
         .intro {
             text-align: center;
             line-height: 1.5;
+        }
+        ul {
+            grid-template-columns: repeat(auto-fill, minmax(calc(100% / 1), 1fr));
         }
 
         ul a {
@@ -347,6 +350,16 @@
         <h2>Irregular Expressions</h2>
         <p>Virtual keyboard for android devices that enables you to write expressive text 🅻𝚒𝕜ᴇ 𝔱𝒽ⓘ𝒔 everywhere
             &mdash; even in apps where text styling is not supported.</p>
+    </li>
+    <li onclick="window.location.href = 'https://github.com/MobileFirstLLC/first-bot-for-reddit'"
+        onkeypress="window.location.href = 'https://github.com/MobileFirstLLC/first-bot-for-reddit'"
+        role="button" tabindex="0">
+        <picture style="background:url('/images/reddit-bot.jpg') no-repeat center/cover">
+            <img src="/images/reddit-bot.gif"
+                 alt="First bot for Reddit"/>
+        </picture>
+        <h2>My First Bot for Reddit</h2>
+        <p>Beginner-level starter code and tutorial for working with reddit programmatically. Make your own bot in < 1 h.</p>
     </li>
 </ul>
 
