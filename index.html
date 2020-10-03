@@ -77,30 +77,21 @@
     ul {
         margin: 1em auto;
         padding: 0;
-        max-width: 1000px;
+        width: 1000px;
+        max-width: 100%;
         list-style: none;
-        display: grid;
         min-height: 0;
-        grid-template-columns: repeat(auto-fill, minmax(calc(100% / 3), 1fr));
-        grid-auto-rows: 1fr;
+        display: block;
     }
 
-    ul:before {
-        content: "";
-        width: 0;
-        padding-bottom: 100%;
-        grid-row: 1 / 1;
-        grid-column: 1 / 1;
-    }
 
     ul > *:first-child {
         grid-row: 1 / 1;
         grid-column: 1 / 1;
     }
 
-    ul li {
+    ul li:not(.title) {
         border: 2px solid #1115;
-        max-width: 320px;
         border-radius: 9px;
         background: rgba(0, 0, 0, 0.1);
         margin: 10px 15px 20px 15px;
@@ -108,34 +99,24 @@
         cursor: pointer;
         overflow: hidden;
         position: relative;
-        padding-top: 10px;
-        outline:none;
+        outline: none;
+        display: grid;
+        grid-template-columns: 320px 1fr;
+        grid-auto-rows: 1fr;
     }
 
-    ul li:before {
-        content: "";
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        height: 10px;
-        width: 100%;
-        z-index: 1;
+    ul li.title {
+        margin: 60px 15px 20px 15px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+    }
+    ul li.title:before{
+        content: "⌘";
+        margin-right: 15px;
     }
 
-    ul li:nth-child(3n + 1):before {
-        background: #E91E63;
-    }
-
-    ul li:nth-child(3n + 2):before {
-        background: #3F51B5;
-    }
-
-    ul li:nth-child(3n + 0):before {
-        background: #9C27B0;
-    }
-
-    ul li:hover, ul li:focus {
+    ul li:not(.title):hover, ul li:not(.title):focus {
         filter: brightness(120%);
         background: rgba(255, 255, 255, 0.01);
         transform: scale(1.02, 1.02);
@@ -143,18 +124,22 @@
 
     ul li picture, ul li iframe {
         background: #333;
-        height: 200px;
+        height: 100%;
         width: 100%;
+        min-height: 200px;
         position: relative;
-        display: block;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 
     ul li picture img {
-        position: absolute;
+        position: relative;
         width: 100%;
-        height: 100%;
+        height: auto;
         top: 0;
         left: 0;
+        margin:auto;
         object-fit: cover;
     }
 
@@ -165,7 +150,10 @@
         padding: 15px 20px 10px 20px;
         border-radius: 4px;
         letter-spacing: 0.05em;
-        text-align: center;
+    }
+
+    ul li > div {
+        text-align: left;
     }
 
     ul p {
@@ -239,19 +227,13 @@
         height: 48px;
     }
 
-    @media (max-width: 1024px) {
-        ul {
-            grid-template-columns: repeat(auto-fill, minmax(calc(100% / 2), 1fr));
-        }
-    }
-
     @media (max-width: 678px) {
+        body{
+            padding: 20px 5px;
+        }
         .intro {
             text-align: center;
             line-height: 1.5;
-        }
-        ul {
-            grid-template-columns: repeat(auto-fill, minmax(calc(100% / 1), 1fr));
         }
 
         ul a {
@@ -259,19 +241,34 @@
         }
 
         ul {
+            width: 500px;
             display: block;
             margin-bottom: 0;
         }
 
-        ul li {
+        ul li:not(.title) {
             margin-bottom: 2em;
             padding-bottom: 0;
+            display: block;
         }
 
         ul li picture, ul li iframe {
-            height: 220px;
+            height: 150px;
         }
-        .links{
+
+        ul li picture img {
+            width: auto;
+            height: 80%;
+            position: relative;
+            margin:auto;
+            display: block;
+        }
+        ul h2 {
+            font-size: 1em;
+            text-align: center;
+            padding: 10px 20px 0 20px;
+        }
+        .links {
             margin-top: 0;
         }
     }
@@ -327,42 +324,71 @@
     </div>
 </a>
 
-<p class="intro">These are open source software projects by <a
+<p class="intro">These are public open source projects by <a
         href="https://mobilefirst.me" style="border-bottom:1px solid #fff;">Mobile First</a></p>
+
+
 <ul>
+    <li class="title"><h3>Software Projects</h3></li>
     <li onclick="window.location.href = '/extension-cli'"
         onkeypress="window.location.href = '/extension-cli'"
         role="button" tabindex="0">
-        <picture>
+        <picture style="background:#103049;height:100%">
             <img src="/images/extension-cli.jpg"
+                 style="position:absolute;width:100%;height:100%;"
                  alt="extension-cli"/>
         </picture>
-        <h2>Extension CLI</h2>
-        <p>Command-line utility tool that speeds up chrome extension development by providing a systematic way to build,
-            test and document extension projects.</p>
+        <div>
+            <h2>Extension CLI</h2>
+            <p>Command-line utility tool that speeds up chrome extension development by providing a systematic way to
+                build,
+                test and document extension projects.</p>
+        </div>
     </li>
     <li onclick="window.location.href = 'https://github.com/MobileFirstLLC/irregular-expressions'"
         onkeypress="window.location.href = 'https://github.com/MobileFirstLLC/irregular-expressions'"
         role="button" tabindex="0">
-        <picture>
+        <picture style="background:#e6e6e6">
             <img src="/images/irregex.jpg"
+
                  alt="irregular expressions"/>
         </picture>
-        <h2>Irregular Expressions</h2>
-        <p>Virtual keyboard for android devices that enables you to write expressive text 🅻𝚒𝕜ᴇ 𝔱𝒽ⓘ𝒔 everywhere
-            &mdash; even in apps where text styling is not supported.</p>
+        <div>
+            <h2>Irregular Expressions</h2>
+            <p>Virtual keyboard for android devices that enables you to write expressive text 🅻𝚒𝕜ᴇ 𝔱𝒽ⓘ𝒔 everywhere
+                &mdash; even in apps where text styling is not supported.</p>
+        </div>
+    </li>
+    <li class="title">
+        <h3>Resources</h3>
+    </li>
+    <li onclick="window.location.href = '/better-social-media'"
+        onkeypress="window.location.href = '/better-social-media'"
+        role="button" tabindex="0">
+        <picture style="background:#3b5998 no-repeat center/cover">
+            <img src="/images/better-sm.png"
+                 alt="Better Social Media"/>
+        </picture>
+        <div>
+            <h2>Better Social Media</h2>
+            <p>List of apps and tools to enhance social media experiences.</p>
+        </div>
     </li>
     <li onclick="window.location.href = 'https://github.com/MobileFirstLLC/first-bot-for-reddit'"
         onkeypress="window.location.href = 'https://github.com/MobileFirstLLC/first-bot-for-reddit'"
         role="button" tabindex="0">
-        <picture style="background:url('/images/reddit-bot.jpg') no-repeat center/cover">
+        <picture style="background: #2B2B2B no-repeat center/cover">
             <img src="/images/reddit-bot.gif"
                  alt="First bot for Reddit"/>
         </picture>
-        <h2>My First Bot for Reddit</h2>
-        <p>Beginner-level starter code and tutorial for working with reddit programmatically. Make your own bot in < 1 h.</p>
+        <div>
+            <h2>My First Bot for Reddit</h2>
+            <p>Beginner-level starter code and tutorial for working with reddit programmatically. Make your own bot in <
+                1 h.</p>
+        </div>
     </li>
 </ul>
+
 
 <div class="links">
     <div class="small">
@@ -383,13 +409,12 @@
         <a href="https://mobilefirst.me" rel="nofollow">Web</a>
     </div>
     <div class="small">
-        <a href="https://github.com/sponsors/MobileFirstLLC" rel="nofollow"><img src="./images/heart-outline.svg" alt=""/></a>
+        <a href="https://github.com/sponsors/MobileFirstLLC" rel="nofollow"><img src="./images/heart-outline.svg"
+                                                                                 alt=""/></a>
         <a href="https://github.com/sponsors/MobileFirstLLC" rel="nofollow">Sponsor</a>
     </div>
-
-
-
 </div>
+
 <div style="text-align: center;font-size:0.6em;">
     <span role="img" aria-label="pin">📍</span>
     <span style=" opacity:0.6;">Augusta, Georgia since 2018</span>
