@@ -111,7 +111,8 @@
         align-items: center;
         justify-content: flex-start;
     }
-    ul li.title:before{
+
+    ul li.title:before {
         content: "⌘";
         margin-right: 15px;
     }
@@ -139,7 +140,7 @@
         height: auto;
         top: 0;
         left: 0;
-        margin:auto;
+        margin: auto;
         object-fit: cover;
     }
 
@@ -147,7 +148,7 @@
         font-weight: 700;
         font-size: 1.1em;
         display: block;
-        padding: 15px 20px 10px 20px;
+        padding: 15px 20px 10px 25px;
         border-radius: 4px;
         letter-spacing: 0.05em;
     }
@@ -228,9 +229,10 @@
     }
 
     @media (max-width: 678px) {
-        body{
+        body {
             padding: 20px 5px;
         }
+
         .intro {
             text-align: center;
             line-height: 1.5;
@@ -260,14 +262,16 @@
             width: auto;
             height: 80%;
             position: relative;
-            margin:auto;
+            margin: auto;
             display: block;
         }
+
         ul h2 {
             font-size: 1em;
             text-align: center;
             padding: 10px 20px 0 20px;
         }
+
         .links {
             margin-top: 0;
         }
@@ -357,6 +361,19 @@
             <h2>Irregular Expressions</h2>
             <p>Virtual keyboard for android devices that enables you to write expressive text 🅻𝚒𝕜ᴇ 𝔱𝒽ⓘ𝒔 everywhere
                 &mdash; even in apps where text styling is not supported.</p>
+        </div>
+    </li>
+    <li onclick="window.location.href = 'https://github.com/MobileFirstLLC/shortcuts-for-chrome'"
+        onkeypress="window.location.href = 'https://github.com/MobileFirstLLC/shortcuts-for-chrome'"
+        role="button" tabindex="0">
+        <picture style="background:#212121;height:100%">
+            <img src="/images/shortcuts.png"
+                 style="position:absolute;width:100%;height:100%;"
+                 alt="Shortcuts for Chrome"/>
+        </picture>
+        <div>
+            <h2>Shortcuts for Chrome</h2>
+            <p>Quick access navigation menu for developers working with chrome browser</p>
         </div>
     </li>
     <li class="title">
