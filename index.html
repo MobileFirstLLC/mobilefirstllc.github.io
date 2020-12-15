@@ -18,7 +18,7 @@
     <!-- meta title -->
     <title>Mobile First | Open Source Software Projects</title>
     <meta property="og:title" content="Mobile First Open Source Software"/>
-    <meta name="twitter:title" content="Mobile First OSS">
+    <meta name="twitter:title" content="Mobile First Open Source Software">
 
     <!-- images -->
     <meta itemprop="image" content="https://oss.mobilefirst.me/images/og_image.png">
@@ -41,7 +41,11 @@
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-6XB4XDVPX3"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+
         gtag('js', new Date());
 
         gtag('config', 'G-6XB4XDVPX3');
@@ -98,7 +102,7 @@
         position: relative;
         outline: none;
         display: grid;
-        grid-template-columns: 280px 1fr;
+        grid-template-columns: 200px 1fr;
         grid-auto-rows: 1fr;
     }
 
@@ -116,27 +120,27 @@
 
     /** point click devices **/
     @media (hover: hover) {
-        ul li:not(.title):hover, ul li:not(.title):focus {
-            border-color: #A4C639;
-            box-shadow: 0 0 0 2px #A4C639, 0 0 20px 13px rgba(255, 255, 255, 0.07);
+        ul li:not(.title):hover, ul li:not(.title):focus, a:focus {
+            border-color: #FFFF00;
+            box-shadow: 0 0 0 2px #FFFF00, 0 0 20px 23px #0003;
         }
 
         a:focus {
             opacity: 1;
             outline: none;
             border-radius: 4px;
-            border-color: #A4C639;
-            box-shadow: 0 0 0 2px #A4C639, 0 0 20px 13px rgba(255, 255, 255, 0.07);
         }
     }
 
-    ul li picture, ul li iframe {
-        background: #333;
-        height: 100%;
-        width: 100%;
-        min-height: 200px;
+    ul li picture {
+        /*background: #333;*/
+        width: 150px;
+        height: 150px!important;
+        border-radius: 9px;
+        overflow: hidden;
         position: relative;
         display: flex;
+        margin:auto;
         align-items: center;
         justify-content: center;
     }
@@ -144,7 +148,7 @@
     ul li picture img {
         position: relative;
         width: 100%;
-        height: auto;
+        height: 100%;
         top: 0;
         left: 0;
         margin: auto;
@@ -169,6 +173,42 @@
         font-size: 0.8em;
         padding: 0 25px 15px 25px;
         line-height: 1.5;
+    }
+
+    ul.second {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    ul.second .title {
+        grid-column-end: 3;
+    }
+
+    ul.second li:not(.title) {
+        grid-template-columns: 1fr;
+        margin: 15px 15px;
+    }
+
+    ul.second picture {
+        display: none;
+    }
+
+    ul.second h2 {
+        padding: 10px 15px 0 15px;
+        text-align: center;
+        font-size: 1em;
+    }
+    ul.second h2 span{
+        font-size: 48px;
+        display: block;
+        margin-bottom: 10px;
+        line-height: 1;
+    }
+
+    ul.second p {
+        padding: 10px 15px;
+        text-align: center;
+        font-size: .7em;
     }
 
     #pixel-logo {
@@ -226,7 +266,7 @@
         font-size: 0.8em;
         opacity: 0.5;
         margin: 0.5em;
-        border:2px solid transparent;
+        border: 2px solid transparent;
         border-radius: 4px;
     }
 
@@ -236,7 +276,8 @@
         width: 48px;
         height: 48px;
     }
-    .small span{
+
+    .small span {
         display: block;
         padding: 0 10px;
         margin-bottom: 10px;
@@ -288,6 +329,17 @@
 
         .links {
             margin-top: 0;
+        }
+
+        ul.second {
+            display: block;
+            width: 400px;
+            max-width: 100%;
+            margin-right: auto;
+            margin-left: auto;
+        }
+        ul.second h2 {
+            font-size: .9em;
         }
     }
 
@@ -350,7 +402,7 @@
     <li onclick="window.location.href = '/extension-cli'"
         onkeypress="window.location.href = '/extension-cli'"
         role="button" tabindex="0">
-        <picture style="background:#103049;height:100%">
+        <picture>
             <img src="/images/extension-cli.jpg"
                  style="position:absolute;width:100%;height:100%;"
                  alt="extension-cli"/>
@@ -363,20 +415,18 @@
     <li onclick="window.location.href = 'https://github.com/MobileFirstLLC/irregular-expressions'"
         onkeypress="window.location.href = 'https://github.com/MobileFirstLLC/irregular-expressions'"
         role="button" tabindex="0">
-        <picture style="background:#e6e6e6">
-            <img src="/images/irregex.jpg"
-
-                 alt="irregular expressions"/>
+        <picture>
+            <img src="/images/irregex.jpg" alt="irregular expressions"/>
         </picture>
         <div>
             <h2>Irregular Expressions</h2>
             <p>Virtual keyboard for android devices for writing expressive text 🅻𝚒𝕜ᴇ 𝔱𝒽ⓘ𝒔.</p>
         </div>
     </li>
-    <li onclick="window.location.href = 'https://github.com/MobileFirstLLC/shortcuts-for-chrome'"
-        onkeypress="window.location.href = 'https://github.com/MobileFirstLLC/shortcuts-for-chrome'"
+    <li onclick="window.location.href = '/shortcuts-for-chrome'"
+        onkeypress="window.location.href = '/shortcuts-for-chrome'"
         role="button" tabindex="0">
-        <picture style="background:#212121;height:100%">
+        <picture>
             <img src="/images/shortcuts.png"
                  style="position:absolute;width:100%;height:100%;"
                  alt="Shortcuts for Chrome"/>
@@ -386,6 +436,8 @@
             <p>Quick access navigation menu for developers working with chrome browser</p>
         </div>
     </li>
+</ul>
+<ul class="second">
     <li class="title">
         <h3>Resources</h3>
     </li>
@@ -398,7 +450,7 @@
                  alt="Social Media Hacker List"/>
         </picture>
         <div>
-            <h2>Social Media Hacker List</h2>
+            <h2><span>👩‍💻</span>Social Media Hacker List</h2>
             <p>Growing list of unofficial apps and tools to enhance social media experiences.</p>
         </div>
     </li>
@@ -410,7 +462,7 @@
                  alt="First bot for Reddit"/>
         </picture>
         <div>
-            <h2>My First Bot for Reddit</h2>
+            <h2><span>🤖</span>First Bot for Reddit</h2>
             <p>Beginner-level starter code and tutorial for working with reddit programmatically. Make your own bot in <
                 1 h.</p>
         </div>
@@ -418,6 +470,10 @@
 </ul>
 
 <div class="links">
+    <a class="small" href="https://mobilefirst.me" rel="nofollow">
+        <img src="./images/home.svg" alt=""/>
+        <span>Home</span>
+    </a>
     <a class="small" href="https://github.com/MobileFirstLLC" rel="nofollow">
         <img src="./images/github-circle.svg" alt=""/>
         <span>Github</span>
@@ -425,14 +481,6 @@
     <a class="small" href="https://www.npmjs.com/~mobilefirstllc" rel="nofollow">
         <img src="./images/npm.svg" alt=""/>
         <span>NPM</span>
-    </a>
-    <a class="small" href="https://play.google.com/store/apps/dev?id=5579443779732185783" rel="nofollow">
-        <img src="./images/google-play.svg" alt=""/>
-        <span>Google Play</span>
-    </a>
-    <a class="small" href="https://mobilefirst.me" rel="nofollow">
-        <img src="./images/home.svg" alt=""/>
-        <span>Web</span>
     </a>
     <a class="small" href="https://github.com/sponsors/MobileFirstLLC" rel="nofollow">
         <img src="./images/heart-outline.svg" alt=""/>
