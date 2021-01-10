@@ -6,6 +6,11 @@
         <priority>1</priority>
     </url>
     <url>
+        <loc>https://oss.mobilefirst.me/sponsors.html</loc>
+        <changefreq>monthly</changefreq>
+        <priority>1</priority>
+    </url>
+    <url>
         <loc>https://oss.mobilefirst.me/shortcuts-for-chrome/</loc>
     </url>
     <url>
