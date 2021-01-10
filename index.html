@@ -110,11 +110,14 @@
             width: 700px;
             box-sizing: border-box;
             display: flex;
+            flex-wrap: wrap;
             align-items: center;
             margin: 88px auto 0 auto;
             position: relative;
             justify-content: center;
             border-radius: 999px;
+            white-space: pre-wrap;
+            text-align: center;
         }
 
         ul {
@@ -330,6 +333,11 @@
                 padding: 20px 5px;
             }
 
+            .sponsors{
+                margin: 2rem auto 0 auto;
+                border-radius: 4px;
+            }
+
             .intro {
                 text-align: center;
                 line-height: 1.5;
@@ -448,7 +456,7 @@
 <p class="intro">These are open source projects by Mobile First.</p>
 
 <a href="sponsors.html" class="sponsors">
-    We appreciate our sponsors &nbsp; 💜 &nbsp; &rarr;
+    <span>We appreciate our sponsors &nbsp; 💜 &nbsp; &rarr;</span>
 </a>
 
 <ul class="primary">
@@ -462,7 +470,7 @@
         </picture>
         <div>
             <h2>Extension CLI</h2>
-            <p>Command-line tool for building browser extensions.</p>
+            <p>Command-line tool for building extensions for Chromium browsers.</p>
         </div>
     </li>
     <li onclick="window.location.href = 'https://github.com/MobileFirstLLC/irregular-expressions'"
@@ -526,7 +534,7 @@
 <div class="links">
     <a class="small" href="https://mobilefirst.me" rel="nofollow">
         <img src="./images/home.svg" alt=""/>
-        <span>Home</span>
+        <span>Website</span>
     </a>
     <a class="small" href="https://github.com/MobileFirstLLC" rel="nofollow">
         <img src="./images/github-circle.svg" alt=""/>

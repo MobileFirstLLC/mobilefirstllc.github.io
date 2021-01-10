@@ -110,11 +110,14 @@
             width: 700px;
             box-sizing: border-box;
             display: flex;
+            flex-wrap: wrap;
             align-items: center;
             margin: 88px auto 0 auto;
             position: relative;
             justify-content: center;
             border-radius: 999px;
+            white-space: pre-wrap;
+            text-align: center;
         }
 
         ul {
@@ -330,6 +333,11 @@
                 padding: 20px 5px;
             }
 
+            .sponsors{
+                margin: 2rem auto 0 auto;
+                border-radius: 4px;
+            }
+
             .intro {
                 text-align: center;
                 line-height: 1.5;
@@ -447,14 +455,18 @@
 
 <p class="intro"></p>
 
-<div style="display:flex;align-items: center; min-height: 40vh; width:500px; max-width: 90%; text-align: center; margin:0 auto;">
+<div style="display:flex;align-items: center; min-height: 40vh; width:550px; max-width: 90%; text-align: center; margin:0 auto 88px auto;">
     <div>
-        <p>
-            You could be our first sponsor. Participate now and we will add you to this page!
-        </p>
-        <br/><br/>
+        <h4>Thank you to our sponsors:</h4>
+        <div style="font-size: 1.2rem">
+            <span>The Tech Doctor</span>
+        </div>
+        <br/><br/><br/><br/>
+        <p>Participate now and we will add you to this page!</p>
+        <br/>
         <a class="button"
            href="https://github.com/sponsors/MobileFirstLLC" style="font-weight: 700">Become a Sponsor</a>
+        <br/><br/>
     </div>
 </div>
 
@@ -462,7 +474,7 @@
 <div class="links">
     <a class="small" href="https://mobilefirst.me" rel="nofollow">
         <img src="./images/home.svg" alt=""/>
-        <span>Home</span>
+        <span>Website</span>
     </a>
     <a class="small" href="https://github.com/MobileFirstLLC" rel="nofollow">
         <img src="./images/github-circle.svg" alt=""/>
