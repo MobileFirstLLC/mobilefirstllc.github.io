@@ -53,6 +53,11 @@
 
 </head>
 <style>
+
+    :root {
+        --theme: #FFFF00;
+    }
+
     body {
         font-family: 'Carrois Gothic', sans-serif;
         display: flex;
@@ -80,13 +85,12 @@
         padding: 5px;
     }
 
-    .intro a:hover,.intro a:focus {
-        border-color: #FFFF00;
-        color: #FFFF00;
+    .intro a:hover, .intro a:focus {
+        border-color: var(--theme);
+        color: var(--theme);
         box-shadow: none;
         border-radius: 0;
     }
-
 
     ul {
         margin: 1em auto;
@@ -97,7 +101,6 @@
         min-height: 0;
         display: block;
     }
-
 
     ul > *:first-child {
         grid-row: 1 / 1;
@@ -134,7 +137,7 @@
     /** point click devices **/
     @media (hover: hover) {
         ul li:not(.title):hover, ul li:not(.title):focus, a:focus {
-            border-color: #FFFF00;
+            border-color: var(--theme);
             box-shadow: 0 0 20px 23px #0003;
         }
 
@@ -146,10 +149,9 @@
     }
 
     ul li picture {
-        /*background: #333;*/
         width: 150px;
         height: 150px !important;
-        border-radius: 9px;
+        border-radius: 4px;
         overflow: hidden;
         position: relative;
         display: flex;
@@ -159,7 +161,7 @@
     }
 
     ul li picture img {
-        position: relative;
+        position:absolute;
         width: 100%;
         height: 100%;
         top: 0;
@@ -328,6 +330,12 @@
             height: 150px;
         }
 
+        ul li picture {
+            width: 100%;
+            border-radius: 0;
+        }
+
+
         ul li picture img {
             width: auto;
             height: 80%;
@@ -432,7 +440,9 @@
         onkeypress="window.location.href = 'https://github.com/MobileFirstLLC/irregular-expressions'"
         role="button" tabindex="0">
         <picture>
-            <img src="/images/irregex.jpg" alt="irregular expressions"/>
+            <img src="/images/irregex.jpg"
+                 style="position:absolute;width:100%;height:100%;"
+                 alt="irregular expressions"/>
         </picture>
         <div>
             <h2>Irregular Expressions</h2>
