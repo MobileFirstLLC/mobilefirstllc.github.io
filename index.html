@@ -10,7 +10,7 @@
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
     <link rel="shortcut icon" href="/images/favicon.ico">
-    <link href="https://fonts.googleapis.com/css?family=Carrois+Gothic&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Fira+Sans&display=swap" rel="stylesheet">
 
     <meta property="og:type" content="website"/>
     <meta property="og:url" content="https://oss.mobilefirst.me"/>
@@ -55,11 +55,11 @@
 <style>
 
     :root {
-        --theme: #FFFF00;
+        --theme: #D500F9;
     }
 
     body {
-        font-family: 'Carrois Gothic', sans-serif;
+        font-family: 'Fira Sans', sans-serif;
         display: flex;
         flex-direction: column;
         font-size: 1.5em;
@@ -108,8 +108,8 @@
     }
 
     ul li:not(.title) {
-        border: 4px solid #1115;
         border-radius: 9px;
+        border: 4px solid #1115;
         background: rgba(0, 0, 0, 0.1);
         margin: 10px 15px 20px 15px;
         transition: all 0.2s;
@@ -337,8 +337,9 @@
 
 
         ul li picture img {
-            width: auto;
+            width: calc(100% - 30px);
             height: 80%;
+            border-radius: 4px;
             position: relative;
             margin: auto;
             display: block;
@@ -428,7 +429,6 @@
         role="button" tabindex="0">
         <picture>
             <img src="/images/extension-cli.jpg"
-                 style="position:absolute;width:100%;height:100%;"
                  alt="extension-cli"/>
         </picture>
         <div>
@@ -441,7 +441,6 @@
         role="button" tabindex="0">
         <picture>
             <img src="/images/irregex.jpg"
-                 style="position:absolute;width:100%;height:100%;"
                  alt="irregular expressions"/>
         </picture>
         <div>
@@ -454,7 +453,6 @@
         role="button" tabindex="0">
         <picture>
             <img src="/images/shortcuts.png"
-                 style="position:absolute;width:100%;height:100%;"
                  alt="Shortcuts for Chrome"/>
         </picture>
         <div>
