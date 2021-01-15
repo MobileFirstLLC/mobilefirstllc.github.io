@@ -20,19 +20,13 @@
         <loc>https://oss.mobilefirst.me/shortcuts-for-chrome/ContextMenuOptions.html</loc>
     </url>
     <url>
-        <loc>https://oss.mobilefirst.me/shortcuts-for-chrome/MenuLinks.html</loc>
-    </url>
-    <url>
-        <loc>https://oss.mobilefirst.me/shortcuts-for-chrome/MenuPanel.html</loc>
+        <loc>https://oss.mobilefirst.me/shortcuts-for-chrome/Menu.html</loc>
     </url>
     <url>
         <loc>https://oss.mobilefirst.me/shortcuts-for-chrome/Popup.html</loc>
     </url>
     <url>
         <loc>https://oss.mobilefirst.me/shortcuts-for-chrome/SVGIconPaths.html</loc>
-    </url>
-    <url>
-        <loc>https://oss.mobilefirst.me/shortcuts-for-chrome/UA_ID.html</loc>
     </url>
     <url>
         <loc>https://oss.mobilefirst.me/shortcuts-for-chrome/index.html</loc>
@@ -48,9 +42,6 @@
     </url>
     <url>
         <loc>https://oss.mobilefirst.me/shortcuts-for-chrome/list_tutorial.html</loc>
-    </url>
-    <url>
-        <loc>https://oss.mobilefirst.me/shortcuts-for-chrome/module-Analytics.html</loc>
     </url>
     <url>
         <loc>https://oss.mobilefirst.me/shortcuts-for-chrome/module-AppIcons.html</loc>
@@ -69,6 +60,9 @@
     </url>
     <url>
         <loc>https://oss.mobilefirst.me/shortcuts-for-chrome/module-Storage.html</loc>
+    </url>
+    <url>
+        <loc>https://oss.mobilefirst.me/shortcuts-for-chrome/module-UpdateHandler.html</loc>
     </url>
     <url>
         <loc>https://oss.mobilefirst.me/shortcuts-for-chrome/tutorial-CHANGELOG.html</loc>
