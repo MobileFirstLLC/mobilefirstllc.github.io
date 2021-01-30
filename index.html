@@ -157,10 +157,10 @@
             justify-content: flex-start;
         }
 
-        ul li.title:before {
-            content: "⌘";
-            margin-right: 15px;
-        }
+        /*ul li.title:before {*/
+        /*    content: "⌘";*/
+        /*    margin-right: 15px;*/
+        /*}*/
 
         /** point click devices **/
         @media (hover: hover) {
@@ -294,6 +294,21 @@
             margin-bottom: 10px;
         }
 
+        .issue-only{
+            max-width: 90%;
+            width: 800px;
+            margin:6rem auto; text-align: center; font-size: 80%;
+        }
+        .issue-only a{
+            display: inline-block;
+            padding: 12px 6px;
+            position: relative;
+        }
+        .issue-only a:not(:first-child)::before{
+            content:'•';
+            margin-right:12px;
+        }
+
         @media (max-width: 678px) {
             body {
                 padding: 20px 5px;
@@ -320,9 +335,12 @@
             }
 
             ul li:not(.title) {
+                margin-left: auto;
+                margin-right: auto;
                 margin-bottom: 2em;
                 padding-bottom: 0;
                 display: block;
+                max-width: 350px;
             }
 
             ul li picture, ul li iframe {
@@ -353,17 +371,12 @@
             .links {
                 margin-top: 0;
             }
-
-            ul.second {
+            .issue-only a{
                 display: block;
-                width: 400px;
-                max-width: 100%;
-                margin-right: auto;
-                margin-left: auto;
+                padding: 12px;
             }
-
-            ul.second h2 {
-                font-size: .9em;
+            .issue-only a:not(:first-child)::before{
+                display: none;
             }
         }
 
@@ -498,10 +511,9 @@
     </li>
 </ul>
 
-<div style="margin:6rem auto; text-align: center; font-size: 80%;">
-    <h4>Issues Tracking Only</h4>
+<div class="issue-only">
+    <h4>Issues Tracking Only:</h4>
     <p><a href="https://github.com/MobileFirstLLC/download-all-images-contrib">Download All Images</a>
-       &nbsp; &bull; &nbsp;
         <a href="https://github.com/MobileFirstLLC/octostats">Octostats</a></p>
 </div>
 
