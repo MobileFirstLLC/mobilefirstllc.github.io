@@ -197,6 +197,9 @@
             margin: auto;
             object-fit: cover;
         }
+        ul li picture span{
+            font-size: 64px;
+        }
 
         ul h2 {
             font-weight: 700;
@@ -217,43 +220,6 @@
             padding: 0 25px 15px 25px;
             line-height: 1.5;
             min-height: 60px;
-        }
-
-        ul.second {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-        }
-
-        ul.second .title {
-            grid-column-end: 3;
-        }
-
-        ul.second li:not(.title) {
-            grid-template-columns: 1fr;
-            margin: 15px 15px;
-        }
-
-        ul.second picture {
-            display: none;
-        }
-
-        ul.second h2 {
-            padding: 10px 15px 0 15px;
-            text-align: center;
-            font-size: 1em;
-        }
-
-        ul.second h2 span {
-            font-size: 48px;
-            display: block;
-            margin-bottom: 10px;
-            line-height: 1;
-        }
-
-        ul.second p {
-            padding: 10px 15px;
-            text-align: center;
-            font-size: .7em;
         }
 
         #pixel-logo {
@@ -460,7 +426,7 @@
 </a>
 
 <ul class="primary">
-    <li class="title"><h3>Software Projects</h3></li>
+    <li class="title"><h3>List of Projects</h3></li>
     <li onclick="window.location.href = 'https://github.com/MobileFirstLLC/extension-cli'"
         onkeypress="window.location.href = 'https://github.com/MobileFirstLLC/extension-cli'"
         role="button" tabindex="0">
@@ -497,22 +463,14 @@
             <p>Quick access navigation menu for developers working with Chrome browser.</p>
         </div>
     </li>
-</ul>
-
-<ul class="second">
-    <li class="title">
-        <h3>Resources</h3>
-    </li>
     <li onclick="window.location.href = 'https://github.com/MobileFirstLLC/social-media-hacker-list'"
         onkeypress="window.location.href = 'https://github.com/MobileFirstLLC/social-media-hacker-list'"
         role="button" tabindex="0">
         <picture style="background:#333;height:100%">
-            <img src="/images/better-sm.png"
-                 style="position:absolute;width:100%;height:100%;top:0;bottom:0;left:0;right:0; object-fit: cover;"
-                 alt="Social Media Hacker List"/>
+            <span>👩‍💻</span>
         </picture>
         <div>
-            <h2><span>👩‍💻</span>Social Media Hacker List</h2>
+            <h2>Social Media Hacker List</h2>
             <p>Growing list of unofficial apps and tools to enhance social media experiences.</p>
         </div>
     </li>
@@ -520,15 +478,32 @@
         onkeypress="window.location.href = 'https://github.com/MobileFirstLLC/first-bot-for-reddit'"
         role="button" tabindex="0">
         <picture style="background: #2B2B2B no-repeat center/cover">
-            <img src="/images/reddit-bot.gif"
-                 alt="First bot for Reddit"/>
+            <span>🤖</span>
         </picture>
         <div>
-            <h2><span>🤖</span>First Bot for Reddit</h2>
+            <h2>First Bot for Reddit</h2>
             <p>Step-by-step beginner tutorial for creating your first reddit bot in less than 1 h.</p>
         </div>
     </li>
+    <li onclick="window.location.href = 'https://github.com/MobileFirstLLC/cws-publish'"
+        onkeypress="window.location.href = 'https://github.com/MobileFirstLLC/cws-publish'"
+        role="button" tabindex="0">
+        <picture style="background: #2B2B2B no-repeat center/cover">
+            <span>📦</span>
+        </picture>
+        <div>
+            <h2>CWS-publish</h2>
+            <p>CI package for programmatically publishing extensions at Chrome Web Store.</p>
+        </div>
+    </li>
 </ul>
+
+<div style="margin:6rem auto; text-align: center; font-size: 80%;">
+    <h4>Issues Tracking Only</h4>
+    <p><a href="https://github.com/MobileFirstLLC/download-all-images-contrib">Download All Images</a>
+       &nbsp; &bull; &nbsp;
+        <a href="https://github.com/MobileFirstLLC/octostats">Octostats</a></p>
+</div>
 
 <div class="links">
     <a class="small" href="https://mobilefirst.me" rel="nofollow">
