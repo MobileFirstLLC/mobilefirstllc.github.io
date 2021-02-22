@@ -82,8 +82,8 @@
             background: var(--theme);
             color: #fff;
             font-size: 1.3rem;
-            border:none;
-            outline:none;
+            border: none;
+            outline: none;
         }
 
         .intro {
@@ -120,7 +120,7 @@
             text-align: center;
         }
 
-        ul {
+        .ul {
             margin: 1em auto;
             padding: 0;
             width: 800px;
@@ -130,12 +130,12 @@
             display: block;
         }
 
-        ul > *:first-child {
+        .ul > *:first-child {
             grid-row: 1 / 1;
             grid-column: 1 / 1;
         }
 
-        ul li:not(.title) {
+        .ul .li:not(.title) {
             border-radius: 9px;
             border: 4px solid #1115;
             background: rgba(0, 0, 0, 0.1);
@@ -150,21 +150,11 @@
             grid-auto-rows: 1fr;
         }
 
-        ul li.title {
-            margin: 60px 15px 20px 15px;
-            display: flex;
-            align-items: center;
-            justify-content: flex-start;
-        }
-
-        /*ul li.title:before {*/
-        /*    content: "⌘";*/
-        /*    margin-right: 15px;*/
-        /*}*/
-
         /** point click devices **/
         @media (hover: hover) {
-            ul li:not(.title):hover, ul li:not(.title):focus, ul a:focus,
+            .ul .li:not(.title):hover,
+            .ul .li:not(.title):focus,
+            .ul a:focus,
             .links a:focus, .sponsors:hover, .sponsors:focus {
                 border-color: var(--theme);
                 box-shadow: 0 0 20px 23px #0003;
@@ -176,7 +166,7 @@
             }
         }
 
-        ul li picture {
+        .ul .li picture {
             width: 150px;
             height: 150px !important;
             border-radius: 4px;
@@ -188,7 +178,7 @@
             justify-content: center;
         }
 
-        ul li picture img {
+        .ul .li picture img {
             position: absolute;
             width: 100%;
             height: 100%;
@@ -197,11 +187,12 @@
             margin: auto;
             object-fit: cover;
         }
-        ul li picture span{
+
+        .ul .li picture span {
             font-size: 64px;
         }
 
-        ul h2 {
+        .ul h2 {
             font-weight: 700;
             font-size: 1.1em;
             display: block;
@@ -210,16 +201,17 @@
             letter-spacing: 0.05em;
         }
 
-        ul li > div {
+        .ul .li > div {
             text-align: left;
         }
 
-        ul p {
+        .ul p {
             opacity: 0.75;
             font-size: 0.8em;
             padding: 0 25px 15px 25px;
             line-height: 1.5;
             min-height: 60px;
+            white-space: pre-wrap;
         }
 
         #pixel-logo {
@@ -294,19 +286,23 @@
             margin-bottom: 10px;
         }
 
-        .issue-only{
+        .issue-only {
             max-width: 90%;
             width: 800px;
-            margin:6rem auto; text-align: center; font-size: 80%;
+            margin: 6rem auto;
+            text-align: center;
+            font-size: 80%;
         }
-        .issue-only a{
+
+        .issue-only a {
             display: inline-block;
             padding: 12px 6px;
             position: relative;
         }
-        .issue-only a:not(:first-child)::before{
-            content:'•';
-            margin-right:12px;
+
+        .issue-only a:not(:first-child)::before {
+            content: '•';
+            margin-right: 12px;
         }
 
         @media (max-width: 678px) {
@@ -314,7 +310,7 @@
                 padding: 20px 5px;
             }
 
-            .sponsors{
+            .sponsors {
                 margin: 2rem auto 0 auto;
                 border-radius: 4px;
             }
@@ -324,17 +320,17 @@
                 line-height: 1.5;
             }
 
-            ul a {
+            .ul a {
                 font-size: 1em;
             }
 
-            ul {
+            .ul {
                 width: 500px;
                 display: block;
                 margin-bottom: 0;
             }
 
-            ul li:not(.title) {
+            .ul .li:not(.title) {
                 margin-left: auto;
                 margin-right: auto;
                 margin-bottom: 2em;
@@ -343,17 +339,18 @@
                 max-width: 350px;
             }
 
-            ul li picture, ul li iframe {
+            .ul .li picture,
+            .ul .li iframe {
                 height: 150px;
             }
 
-            ul li picture {
+            .ul .li picture {
                 width: 100%;
                 border-radius: 0;
             }
 
 
-            ul li picture img {
+            .ul .li picture img {
                 width: calc(100% - 30px);
                 height: 80%;
                 border-radius: 4px;
@@ -362,7 +359,7 @@
                 display: block;
             }
 
-            ul h2 {
+            .ul h2 {
                 font-size: 1em;
                 text-align: center;
                 padding: 10px 20px 0 20px;
@@ -371,11 +368,13 @@
             .links {
                 margin-top: 0;
             }
-            .issue-only a{
+
+            .issue-only a {
                 display: block;
                 padding: 12px;
             }
-            .issue-only a:not(:first-child)::before{
+
+            .issue-only a:not(:first-child)::before {
                 display: none;
             }
         }
@@ -393,8 +392,8 @@
                 transform: scale3d(1, 1, 1);
             }
         }
-
     </style>
+
 </head>
 <body>
 <a href="/" style="outline:none" tabindex="0">
@@ -438,11 +437,11 @@
     <span>We appreciate our sponsors &nbsp; 💜 &nbsp; &rarr;</span>
 </a>
 
-<ul class="primary">
-<!--    <li class="title"><h3>List of Projects</h3></li>-->
-    <li onclick="window.location.href = 'https://github.com/MobileFirstLLC/extension-cli'"
-        onkeypress="window.location.href = 'https://github.com/MobileFirstLLC/extension-cli'"
-        role="button" tabindex="0">
+<div class="ul primary">
+    <a class="li"
+       href="https://github.com/MobileFirstLLC/extension-cli"
+       role="button"
+       tabindex="0">
         <picture>
             <img src="/images/extension-cli.jpg"
                  alt="extension-cli"/>
@@ -451,10 +450,10 @@
             <h2>Extension CLI</h2>
             <p>Command-line tool for building extensions for Chromium browsers.</p>
         </div>
-    </li>
-    <li onclick="window.location.href = 'https://github.com/MobileFirstLLC/irregular-expressions'"
-        onkeypress="window.location.href = 'https://github.com/MobileFirstLLC/irregular-expressions'"
-        role="button" tabindex="0">
+    </a>
+    <a class="li"
+       href="https://github.com/MobileFirstLLC/irregular-expressions"
+       role="button" tabindex="0">
         <picture>
             <img src="/images/irregex.jpg"
                  alt="irregular expressions"/>
@@ -463,10 +462,21 @@
             <h2>Irregular Expressions</h2>
             <p>Virtual keyboard for android devices for writing expressive text 🅻𝚒𝕜ᴇ 𝔱𝒽ⓘ𝒔.</p>
         </div>
-    </li>
-    <li onclick="window.location.href = 'https://github.com/MobileFirstLLC/shortcuts-for-chrome'"
-        onkeypress="window.location.href = 'https://github.com/MobileFirstLLC/shortcuts-for-chrome'"
-        role="button" tabindex="0">
+    </a>
+    <a class="li"
+       href="https://github.com/MobileFirstLLC/social-media-hacker-list"
+       role="button" tabindex="0">
+        <picture style="background:#333;height:100%">
+            <span>👩‍💻</span>
+        </picture>
+        <div>
+            <h2>Social Media Hacker List</h2>
+            <p>Growing list of unofficial apps and tools to enhance social media experiences.</p>
+        </div>
+    </a>
+    <a class="li"
+       href="https://github.com/MobileFirstLLC/shortcuts-for-chrome"
+       role="button" tabindex="0">
         <picture>
             <img src="/images/shortcuts.png"
                  alt="Shortcuts for Chrome"/>
@@ -475,21 +485,21 @@
             <h2>Shortcuts for Chrome</h2>
             <p>Quick access navigation menu for developers working with Chrome browser.</p>
         </div>
-    </li>
-    <li onclick="window.location.href = 'https://github.com/MobileFirstLLC/social-media-hacker-list'"
-        onkeypress="window.location.href = 'https://github.com/MobileFirstLLC/social-media-hacker-list'"
-        role="button" tabindex="0">
-        <picture style="background:#333;height:100%">
-            <span>👩‍💻</span>
+    </a>
+    <a class="li"
+       href="https://github.com/MobileFirstLLC/doucheblock"
+       role="button" tabindex="0">
+        <picture>
+            <img src="/images/doucheblock.jpg"
+                 alt="DoucheBlock for Twitter"/>
         </picture>
         <div>
-            <h2>Social Media Hacker List</h2>
-            <p>Growing list of unofficial apps and tools to enhance social media experiences.</p>
+            <h2>DoucheBlock for Twitter</h2>
+            <p>Automatically block Twitter users with specific keywords in their bio.</p>
         </div>
-    </li>
-    <li onclick="window.location.href = 'https://github.com/MobileFirstLLC/first-bot-for-reddit'"
-        onkeypress="window.location.href = 'https://github.com/MobileFirstLLC/first-bot-for-reddit'"
-        role="button" tabindex="0">
+    </a>
+    <a class="li"
+       href="https://github.com/MobileFirstLLC/first-bot-for-reddit" role="button" tabindex="0">
         <picture style="background: #2B2B2B no-repeat center/cover">
             <span>🤖</span>
         </picture>
@@ -497,10 +507,10 @@
             <h2>First Bot for Reddit</h2>
             <p>Step-by-step beginner tutorial for creating your first reddit bot in less than 1 h.</p>
         </div>
-    </li>
-    <li onclick="window.location.href = 'https://github.com/MobileFirstLLC/cws-publish'"
-        onkeypress="window.location.href = 'https://github.com/MobileFirstLLC/cws-publish'"
-        role="button" tabindex="0">
+    </a>
+    <a class="li"
+       href="https://github.com/MobileFirstLLC/cws-publish"
+       role="button" tabindex="0">
         <picture style="background: #2B2B2B no-repeat center/cover">
             <span>📦</span>
         </picture>
@@ -508,8 +518,8 @@
             <h2>CWS-publish</h2>
             <p>CI package for programmatically publishing extensions at Chrome Web Store.</p>
         </div>
-    </li>
-</ul>
+    </a>
+</div>
 
 <div class="issue-only">
     <h4>Issues Tracking Only:</h4>
@@ -538,7 +548,7 @@
 
 <div style="text-align: center;font-size:0.6em;">
     <span role="img" aria-label="pin">📍</span>
-    <span style=" opacity:0.6;">Augusta, Georgia since 2018</span>
+    <span style=" opacity:0.6;">Made in Augusta, Georgia</span>
 </div>
 
 </body>
