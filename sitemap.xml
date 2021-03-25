@@ -14,25 +14,16 @@
         <loc>https://oss.mobilefirst.me/shortcuts-for-chrome/</loc>
     </url>
     <url>
-        <loc>https://oss.mobilefirst.me/shortcuts-for-chrome/Background.html</loc>
+        <loc>https://oss.mobilefirst.me/shortcuts-for-chrome/AppConfig.html</loc>
     </url>
     <url>
         <loc>https://oss.mobilefirst.me/shortcuts-for-chrome/ContextMenuOptions.html</loc>
-    </url>
-    <url>
-        <loc>https://oss.mobilefirst.me/shortcuts-for-chrome/Menu.html</loc>
-    </url>
-    <url>
-        <loc>https://oss.mobilefirst.me/shortcuts-for-chrome/Popup.html</loc>
     </url>
     <url>
         <loc>https://oss.mobilefirst.me/shortcuts-for-chrome/SVGIconPaths.html</loc>
     </url>
     <url>
         <loc>https://oss.mobilefirst.me/shortcuts-for-chrome/index.html</loc>
-    </url>
-    <url>
-        <loc>https://oss.mobilefirst.me/shortcuts-for-chrome/list_class.html</loc>
     </url>
     <url>
         <loc>https://oss.mobilefirst.me/shortcuts-for-chrome/list_module.html</loc>
@@ -47,6 +38,9 @@
         <loc>https://oss.mobilefirst.me/shortcuts-for-chrome/module-AppIcons.html</loc>
     </url>
     <url>
+        <loc>https://oss.mobilefirst.me/shortcuts-for-chrome/module-Background.html</loc>
+    </url>
+    <url>
         <loc>https://oss.mobilefirst.me/shortcuts-for-chrome/module-BackgroundApi.html</loc>
     </url>
     <url>
@@ -57,6 +51,24 @@
     </url>
     <url>
         <loc>https://oss.mobilefirst.me/shortcuts-for-chrome/module-Dragging.html</loc>
+    </url>
+    <url>
+        <loc>https://oss.mobilefirst.me/shortcuts-for-chrome/module-Helpers.html</loc>
+    </url>
+    <url>
+        <loc>https://oss.mobilefirst.me/shortcuts-for-chrome/module-Menu-Menu.html</loc>
+    </url>
+    <url>
+        <loc>https://oss.mobilefirst.me/shortcuts-for-chrome/module-Menu.html</loc>
+    </url>
+    <url>
+        <loc>https://oss.mobilefirst.me/shortcuts-for-chrome/module-Popup-Popup.html</loc>
+    </url>
+    <url>
+        <loc>https://oss.mobilefirst.me/shortcuts-for-chrome/module-Popup.html</loc>
+    </url>
+    <url>
+        <loc>https://oss.mobilefirst.me/shortcuts-for-chrome/module-RecentLinks.html</loc>
     </url>
     <url>
         <loc>https://oss.mobilefirst.me/shortcuts-for-chrome/module-Storage.html</loc>
@@ -70,4 +82,17 @@
     <url>
         <loc>https://oss.mobilefirst.me/shortcuts-for-chrome/tutorial-privacy.html</loc>
     </url>
+    <url><loc>https://oss.mobilefirst.me/doucheblock/</loc></url>
+    <url><loc>https://oss.mobilefirst.me/doucheblock/index.html</loc></url>
+    <url><loc>https://oss.mobilefirst.me/doucheblock/list_module.html</loc></url>
+    <url><loc>https://oss.mobilefirst.me/doucheblock/list_tutorial.html</loc></url>
+    <url><loc>https://oss.mobilefirst.me/doucheblock/module-AutoBlocker.html</loc></url>
+    <url><loc>https://oss.mobilefirst.me/doucheblock/module-BrowserAction.html</loc></url>
+    <url><loc>https://oss.mobilefirst.me/doucheblock/module-OnInstall.html</loc></url>
+    <url><loc>https://oss.mobilefirst.me/doucheblock/module-OptionsPage.html</loc></url>
+    <url><loc>https://oss.mobilefirst.me/doucheblock/module-Storage.html</loc></url>
+    <url><loc>https://oss.mobilefirst.me/doucheblock/module-Tabs.html</loc></url>
+    <url><loc>https://oss.mobilefirst.me/doucheblock/module-Tokens.html</loc></url>
+    <url><loc>https://oss.mobilefirst.me/doucheblock/module-TwitterApi.html</loc></url>
+    <url><loc>https://oss.mobilefirst.me/doucheblock/tutorial-privacy.html</loc></url>
 </urlset>
