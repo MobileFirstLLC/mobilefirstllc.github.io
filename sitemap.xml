@@ -1,101 +1,52 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <urlset xmlns='http://www.sitemaps.org/schemas/sitemap/0.9'>
-    <url>
-        <loc>https://oss.mobilefirst.me/</loc>
-        <changefreq>weekly</changefreq>
-        <priority>1</priority>
-    </url>
-    <url>
-        <loc>https://oss.mobilefirst.me/sponsors.html</loc>
-        <changefreq>monthly</changefreq>
-        <priority>1</priority>
-    </url>
-    <url>
-        <loc>http://oss.mobilefirst.me/social-media-hacker-list/</loc>
-    </url>
-    <url>
-        <loc>https://oss.mobilefirst.me/shortcuts-for-chrome/</loc>
-    </url>
-    <url>
-        <loc>https://oss.mobilefirst.me/shortcuts-for-chrome/AppConfig.html</loc>
-    </url>
-    <url>
-        <loc>https://oss.mobilefirst.me/shortcuts-for-chrome/ContextMenuOptions.html</loc>
-    </url>
-    <url>
-        <loc>https://oss.mobilefirst.me/shortcuts-for-chrome/SVGIconPaths.html</loc>
-    </url>
-    <url>
-        <loc>https://oss.mobilefirst.me/shortcuts-for-chrome/index.html</loc>
-    </url>
-    <url>
-        <loc>https://oss.mobilefirst.me/shortcuts-for-chrome/list_module.html</loc>
-    </url>
-    <url>
-        <loc>https://oss.mobilefirst.me/shortcuts-for-chrome/list_namespace.html</loc>
-    </url>
-    <url>
-        <loc>https://oss.mobilefirst.me/shortcuts-for-chrome/list_tutorial.html</loc>
-    </url>
-    <url>
-        <loc>https://oss.mobilefirst.me/shortcuts-for-chrome/module-AppIcons.html</loc>
-    </url>
-    <url>
-        <loc>https://oss.mobilefirst.me/shortcuts-for-chrome/module-Background.html</loc>
-    </url>
-    <url>
-        <loc>https://oss.mobilefirst.me/shortcuts-for-chrome/module-BackgroundApi.html</loc>
-    </url>
-    <url>
-        <loc>https://oss.mobilefirst.me/shortcuts-for-chrome/module-CenteredPopup.html</loc>
-    </url>
-    <url>
-        <loc>https://oss.mobilefirst.me/shortcuts-for-chrome/module-ContextMenu.html</loc>
-    </url>
-    <url>
-        <loc>https://oss.mobilefirst.me/shortcuts-for-chrome/module-Dragging.html</loc>
-    </url>
-    <url>
-        <loc>https://oss.mobilefirst.me/shortcuts-for-chrome/module-Helpers.html</loc>
-    </url>
-    <url>
-        <loc>https://oss.mobilefirst.me/shortcuts-for-chrome/module-Menu-Menu.html</loc>
-    </url>
-    <url>
-        <loc>https://oss.mobilefirst.me/shortcuts-for-chrome/module-Menu.html</loc>
-    </url>
-    <url>
-        <loc>https://oss.mobilefirst.me/shortcuts-for-chrome/module-Popup-Popup.html</loc>
-    </url>
-    <url>
-        <loc>https://oss.mobilefirst.me/shortcuts-for-chrome/module-Popup.html</loc>
-    </url>
-    <url>
-        <loc>https://oss.mobilefirst.me/shortcuts-for-chrome/module-RecentLinks.html</loc>
-    </url>
-    <url>
-        <loc>https://oss.mobilefirst.me/shortcuts-for-chrome/module-Storage.html</loc>
-    </url>
-    <url>
-        <loc>https://oss.mobilefirst.me/shortcuts-for-chrome/module-UpdateHandler.html</loc>
-    </url>
-    <url>
-        <loc>https://oss.mobilefirst.me/shortcuts-for-chrome/tutorial-CHANGELOG.html</loc>
-    </url>
-    <url>
-        <loc>https://oss.mobilefirst.me/shortcuts-for-chrome/tutorial-privacy.html</loc>
-    </url>
+    <url><loc>https://oss.mobilefirst.me/</loc></url>
+    <url><loc>https://oss.mobilefirst.me/sponsors.html</loc></url>
+    <url><loc>http://oss.mobilefirst.me/social-media-hacker-list/</loc></url>
+    <url><loc>https://oss.mobilefirst.me/shortcuts-for-chrome/</loc></url>
+    <url><loc>https://oss.mobilefirst.me/shortcuts-for-chrome/index.html</loc></url>
+    <url><loc>https://oss.mobilefirst.me/shortcuts-for-chrome/list_module.html</loc></url>
+    <url><loc>https://oss.mobilefirst.me/shortcuts-for-chrome/list_tutorial.html</loc></url>
+    <url><loc>https://oss.mobilefirst.me/shortcuts-for-chrome/module-Api-Api.html</loc></url>
+    <url><loc>https://oss.mobilefirst.me/shortcuts-for-chrome/module-Api.html</loc></url>
+    <url><loc>https://oss.mobilefirst.me/shortcuts-for-chrome/module-AppConfig.html</loc></url>
+    <url><loc>https://oss.mobilefirst.me/shortcuts-for-chrome/module-Background-Background.html</loc></url>
+    <url><loc>https://oss.mobilefirst.me/shortcuts-for-chrome/module-Background.html</loc></url>
+    <url><loc>https://oss.mobilefirst.me/shortcuts-for-chrome/module-ContextMenu-ContextMenu.html</loc></url>
+    <url><loc>https://oss.mobilefirst.me/shortcuts-for-chrome/module-ContextMenu.html</loc></url>
+    <url><loc>https://oss.mobilefirst.me/shortcuts-for-chrome/module-Dragging-Dragging.html</loc></url>
+    <url><loc>https://oss.mobilefirst.me/shortcuts-for-chrome/module-Dragging.html</loc></url>
+    <url><loc>https://oss.mobilefirst.me/shortcuts-for-chrome/module-Helpers.html</loc></url>
+    <url><loc>https://oss.mobilefirst.me/shortcuts-for-chrome/module-Menu-Menu.html</loc></url>
+    <url><loc>https://oss.mobilefirst.me/shortcuts-for-chrome/module-Menu.html</loc></url>
+    <url><loc>https://oss.mobilefirst.me/shortcuts-for-chrome/module-Popup-Popup.html</loc></url>
+    <url><loc>https://oss.mobilefirst.me/shortcuts-for-chrome/module-Popup.html</loc></url>
+    <url><loc>https://oss.mobilefirst.me/shortcuts-for-chrome/module-RecentLinks.html</loc></url>
+    <url><loc>https://oss.mobilefirst.me/shortcuts-for-chrome/module-Storage.html</loc></url>
+    <url><loc>https://oss.mobilefirst.me/shortcuts-for-chrome/tutorial-changelog.html</loc></url>
+    <url><loc>https://oss.mobilefirst.me/shortcuts-for-chrome/tutorial-dev_guide.html</loc></url>
+    <url><loc>https://oss.mobilefirst.me/shortcuts-for-chrome/tutorial-privacy.html</loc></url>
     <url><loc>https://oss.mobilefirst.me/doucheblock/</loc></url>
+    <url><loc>https://oss.mobilefirst.me/doucheblock/global.html</loc></url>
     <url><loc>https://oss.mobilefirst.me/doucheblock/index.html</loc></url>
     <url><loc>https://oss.mobilefirst.me/doucheblock/list_module.html</loc></url>
     <url><loc>https://oss.mobilefirst.me/doucheblock/list_tutorial.html</loc></url>
     <url><loc>https://oss.mobilefirst.me/doucheblock/module-AutoBlocker.html</loc></url>
+    <url><loc>https://oss.mobilefirst.me/doucheblock/module-BlockerState.html</loc></url>
+    <url><loc>https://oss.mobilefirst.me/doucheblock/module-BrowserAction-BrowserAction.html</loc></url>
     <url><loc>https://oss.mobilefirst.me/doucheblock/module-BrowserAction.html</loc></url>
+    <url><loc>https://oss.mobilefirst.me/doucheblock/module-HelpPage.html</loc></url>
+    <url><loc>https://oss.mobilefirst.me/doucheblock/module-OnInstall-OnInstall.html</loc></url>
     <url><loc>https://oss.mobilefirst.me/doucheblock/module-OnInstall.html</loc></url>
     <url><loc>https://oss.mobilefirst.me/doucheblock/module-OptionsPage.html</loc></url>
+    <url><loc>https://oss.mobilefirst.me/doucheblock/module-Page.html</loc></url>
     <url><loc>https://oss.mobilefirst.me/doucheblock/module-Storage.html</loc></url>
     <url><loc>https://oss.mobilefirst.me/doucheblock/module-Tabs.html</loc></url>
+    <url><loc>https://oss.mobilefirst.me/doucheblock/module-Tokens-Tokens.html</loc></url>
     <url><loc>https://oss.mobilefirst.me/doucheblock/module-Tokens.html</loc></url>
     <url><loc>https://oss.mobilefirst.me/doucheblock/module-TwitterApi.html</loc></url>
+    <url><loc>https://oss.mobilefirst.me/doucheblock/tutorial-changelog.html</loc></url>
+    <url><loc>https://oss.mobilefirst.me/doucheblock/tutorial-dev_guide.html</loc></url>
+    <url><loc>https://oss.mobilefirst.me/doucheblock/tutorial-presskit.html</loc></url>
     <url><loc>https://oss.mobilefirst.me/doucheblock/tutorial-privacy.html</loc></url>
 </urlset>
